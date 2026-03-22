@@ -34,9 +34,9 @@ export default function SlideHero({ onNext }: SlideProps) {
       <div className="absolute inset-0 grid-pattern opacity-20 z-0 pointer-events-none" />
 
       {/* Gradient bubbles — trendy blurred orbs */}
-      <div className="absolute top-[15%] left-[10%] w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] rounded-full bg-blue-500/[0.07] blur-[100px] lg:blur-[160px] pointer-events-none" />
-      <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] lg:w-[550px] lg:h-[550px] rounded-full bg-pink-500/[0.06] blur-[100px] lg:blur-[160px] pointer-events-none" />
-      <div className="absolute top-[50%] left-[55%] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full bg-purple-500/[0.04] blur-[120px] lg:blur-[180px] pointer-events-none" />
+      <div className="absolute top-[15%] left-[10%] w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] rounded-full bg-blue-500/[0.12] blur-[100px] lg:blur-[160px] pointer-events-none" />
+      <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] lg:w-[550px] lg:h-[550px] rounded-full bg-pink-500/[0.10] blur-[100px] lg:blur-[160px] pointer-events-none" />
+      <div className="absolute top-[50%] left-[55%] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full bg-purple-500/[0.07] blur-[120px] lg:blur-[180px] pointer-events-none" />
 
       <main className="relative z-10 w-full h-full flex flex-col items-center justify-center px-6 md:px-16 lg:px-24">
         <motion.div variants={itemVariants} className="mb-6 lg:mb-8">
