@@ -53,9 +53,6 @@ export default function SlideHero({ onNext }: SlideProps) {
           <span className="block text-foreground/60 mt-4 lg:mt-6 text-xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight font-semibold">
             ЦИФРОВАЯ СОВЕСТЬ
           </span>
-          <span className="block text-foreground/40 mt-1 lg:mt-2 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-medium">
-            АКТЮБИНСКОЙ ОБЛАСТИ
-          </span>
         </motion.h1>
 
         <motion.div
