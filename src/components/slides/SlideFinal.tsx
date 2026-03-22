@@ -82,7 +82,7 @@ export default function SlideFinal({ onNext }: SlideProps) {
                     Бактыбай Алихан
                   </p>
                   <p className="text-foreground/30 font-mono text-[10px] lg:text-xs tracking-wider uppercase mt-1">
-                    17 лет • Лидер Будущего
+                    17 лет
                   </p>
                 </motion.div>
               </div>

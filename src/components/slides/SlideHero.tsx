@@ -2,6 +2,8 @@ import { motion } from 'motion/react';
 import { ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { SlideProps } from '../../types';
 
+const EASE = [0.16, 1, 0.3, 1] as [number, number, number, number];
+
 export default function SlideHero({ onNext }: SlideProps) {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -16,7 +18,7 @@ export default function SlideHero({ onNext }: SlideProps) {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
+      transition: { duration: 0.8, ease: EASE },
     },
   };
 
@@ -28,8 +30,13 @@ export default function SlideHero({ onNext }: SlideProps) {
       variants={containerVariants}
       className="relative h-screen w-full bg-background overflow-hidden text-foreground"
     >
+      {/* Grid pattern */}
       <div className="absolute inset-0 grid-pattern opacity-20 z-0 pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] lg:w-[800px] h-[600px] lg:h-[800px] bg-foreground/5 rounded-full blur-[160px] pointer-events-none" />
+
+      {/* Gradient bubbles — trendy blurred orbs */}
+      <div className="absolute top-[15%] left-[10%] w-[300px] h-[300px] lg:w-[500px] lg:h-[500px] rounded-full bg-blue-500/[0.07] blur-[100px] lg:blur-[160px] pointer-events-none" />
+      <div className="absolute bottom-[10%] right-[10%] w-[350px] h-[350px] lg:w-[550px] lg:h-[550px] rounded-full bg-pink-500/[0.06] blur-[100px] lg:blur-[160px] pointer-events-none" />
+      <div className="absolute top-[50%] left-[55%] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full bg-purple-500/[0.04] blur-[120px] lg:blur-[180px] pointer-events-none" />
 
       <main className="relative z-10 w-full h-full flex flex-col items-center justify-center px-6 md:px-16 lg:px-24">
         <motion.div variants={itemVariants} className="mb-6 lg:mb-8">
@@ -43,10 +50,10 @@ export default function SlideHero({ onNext }: SlideProps) {
           className="font-headline font-black text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] xl:text-[12rem] leading-[0.85] text-center tracking-tighter max-w-full px-4"
         >
           QAIYRYM
-          <span className="block text-foreground/40 mt-4 lg:mt-6 text-xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight font-medium">
+          <span className="block text-foreground/60 mt-4 lg:mt-6 text-xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight font-semibold">
             ЦИФРОВАЯ СОВЕСТЬ
           </span>
-          <span className="block text-foreground/20 mt-1 lg:mt-2 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-light">
+          <span className="block text-foreground/40 mt-1 lg:mt-2 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-medium">
             АКТЮБИНСКОЙ ОБЛАСТИ
           </span>
         </motion.h1>
