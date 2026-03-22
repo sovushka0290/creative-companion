@@ -84,6 +84,7 @@ export default function SlideFinal({ onNext }: SlideProps) {
                   <p className="text-foreground/30 font-mono text-[10px] lg:text-xs tracking-wider uppercase mt-1">
                     17 лет
                   </p>
+                </motion.div>
               </div>
 
               {/* QR Code — side-by-side on lg */}
