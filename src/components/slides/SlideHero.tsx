@@ -74,12 +74,21 @@ export default function SlideHero({ onNext }: SlideProps) {
 
       <div className="absolute top-6 left-6 md:top-12 md:left-12 flex flex-col gap-2">
         <div className="w-12 lg:w-16 h-[1px] bg-foreground/20" />
-        <div className="font-mono text-[10px] text-foreground/30 tracking-widest uppercase">Infrastructure V.09</div>
+        <div className="font-mono text-[10px] lg:text-xs text-foreground/30 tracking-widest uppercase">Инновационная платформа</div>
+      </div>
+
+      <div className="absolute top-6 right-6 md:top-12 md:right-12 text-right flex flex-col items-end gap-2">
+        <div className="w-12 lg:w-16 h-[1px] bg-foreground/20" />
+        <div className="font-mono text-[10px] lg:text-xs text-foreground/30 tracking-widest uppercase">Прозрачность и доверие</div>
+      </div>
+
+      <div className="absolute bottom-16 md:bottom-12 left-6 md:left-12 flex flex-col gap-1">
+        <div className="font-mono text-[10px] lg:text-xs text-foreground/30 uppercase tracking-widest">Цифровые активы региона</div>
       </div>
 
       <div className="absolute bottom-16 md:bottom-12 right-6 md:right-12 text-right flex flex-col gap-1">
-        <div className="font-headline text-2xl md:text-3xl font-bold text-foreground/80 tracking-tighter">2024</div>
-        <div className="font-mono text-[10px] text-foreground/30 uppercase tracking-widest">Institutional Sovereignty</div>
+        <div className="font-headline text-2xl md:text-3xl font-bold text-foreground/80 tracking-tighter">2026</div>
+        <div className="font-mono text-[10px] lg:text-xs text-foreground/30 uppercase tracking-widest">Проект года</div>
       </div>
 
       <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent" />
